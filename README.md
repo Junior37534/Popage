@@ -77,7 +77,7 @@ To build Popage yourself, you need **Node.js** installed.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/popage.git
+   git clone https://github.com/Junior37534/popage.git
    cd popage
    ```
 
