@@ -1,0 +1,36 @@
+:root {
+    /* Dark theme — sober, professional (Pop!_OS / Adwaita inspired) */
+    --bg-primary: #0d0f14;
+    /* Deep dark background */
+    --bg-secondary: #151821;
+    /* Cards / sidebar */
+    --bg-tertiary: #1c2030;
+    /* Hover / elevated surfaces */
+    --border: #2a2d3a;
+    /* Subtle borders */
+
+    --text-primary: #e8eaf0;
+    /* Main text */
+    --text-secondary: #8b8fa3;
+    /* Muted labels */
+    --text-tertiary: #555a6e;
+    /* Disabled / hints */
+
+    --accent: #6b8afd;
+    /* Default accent (soft blue) */
+    --accent-hover: #8ba4fd;
+    /* Accent hover state */
+    --accent-muted: rgba(107, 138, 253, 0.15);
+    /* Accent with low opacity */
+
+    --success: #4ade80;
+    /* Green — good temps, full battery */
+    --warning: #fbbf24;
+    /* Amber — medium temps */
+    --danger: #f87171;
+    /* Red — high temps, low battery */
+
+    --gauge-bg: #1c2030;
+    /* Gauge track background */
+    --gauge-gradient: linear-gradient(135deg, var(--accent), #a78bfa);
+}

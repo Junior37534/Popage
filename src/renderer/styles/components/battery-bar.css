@@ -1,0 +1,92 @@
+.battery-card {
+    background-color: var(--bg-secondary);
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.battery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.battery-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.battery-status-badge {
+    padding: 4px 12px;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+}
+
+.battery-level-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.battery-bar-container {
+    flex: 1;
+    height: 12px;
+    background-color: var(--bg-tertiary);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.battery-bar-fill {
+    height: 100%;
+    transition: width 0.5s ease-in-out, background-color 0.3s;
+}
+
+.battery-percentage {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    min-width: 60px;
+    text-align: right;
+}
+
+.battery-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.battery-status-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 13px;
+}
+
+.battery-label {
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.battery-value {
+    color: var(--text-secondary);
+    font-weight: 500;
+    text-align: right;
+    max-width: 200px;
+}
+
+.battery-value.conservation-on {
+    color: var(--success);
+}

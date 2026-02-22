@@ -1,0 +1,227 @@
+.controls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+}
+
+.control-card {
+    background-color: var(--bg-secondary);
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.control-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.control-card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.control-current {
+    font-size: 13px;
+    color: var(--text-secondary);
+}
+
+.control-current strong {
+    color: var(--accent);
+    text-transform: capitalize;
+}
+
+.control-note {
+    font-size: 12px;
+    color: var(--warning);
+    margin-top: 8px;
+    font-style: italic;
+}
+
+.radio-group {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.radio-option {
+    padding: 8px 16px;
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.radio-option:hover:not(.disabled) {
+    background-color: var(--border);
+}
+
+.radio-option.active {
+    background-color: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+}
+
+.radio-option.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.conservation-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: var(--bg-tertiary);
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.conservation-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.conservation-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.conservation-desc {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+.toggle-switch {
+    width: 44px;
+    height: 24px;
+    background-color: var(--border);
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-switch::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.toggle-switch.active {
+    background-color: var(--success);
+}
+
+.toggle-switch.active::after {
+    transform: translateX(20px);
+}
+
+.toggle-switch.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.auth-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: rgba(251, 191, 36, 0.1);
+    border: 1px solid var(--warning);
+    border-radius: 12px;
+    margin-bottom: 24px;
+}
+
+.auth-banner.authenticated {
+    background-color: rgba(74, 222, 128, 0.1);
+    border-color: var(--success);
+}
+
+.auth-banner-text {
+    font-size: 14px;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.auth-banner.authenticated .auth-banner-text {
+    color: var(--success);
+}
+
+.auth-banner-btn {
+    padding: 8px 16px;
+    background-color: var(--warning);
+    color: #000;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.auth-banner-btn:hover {
+    opacity: 0.9;
+}
+
+.auth-banner-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.control-loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    gap: 8px;
+}
+
+.loading-dot {
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent);
+    border-radius: 50%;
+    animation: bounce 1.4s infinite ease-in-out both;
+}
+
+.loading-dot:nth-child(1) {
+    animation-delay: -0.32s;
+}
+
+.loading-dot:nth-child(2) {
+    animation-delay: -0.16s;
+}
+
+@keyframes bounce {
+
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+}
