@@ -15,6 +15,19 @@
 
 ---
 
+<div align="center">
+  <img src="assets/dashboard.png" alt="Dashboard View" width="800" />
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="assets/controls.png" alt="Controls View" width="400" />
+  <img src="assets/settings.png" alt="Settings View" width="400" />
+</div>
+
+---
+
 ## 🚀 Features
 
 Popage is an Electron + React application designed to replace multiple disparate terminal commands and GNOME extensions with a single, beautiful dashboard. It offers real-time monitoring and deeply integrated system controls:
